@@ -1,1 +1,1 @@
-# b6-java --clear
+# b6-java --test
