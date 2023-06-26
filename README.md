@@ -1,1 +1,1 @@
-# b6-java
+# b6-java --test
