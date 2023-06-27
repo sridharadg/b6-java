@@ -34,12 +34,7 @@ checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs:
     }
   }
 
-  stage('run') {
-    steps {
-        sh 'chmod 777 ./scripts/deliver.sh'
-        sh './scripts/deliver.sh'}
-  }
-
+  
 }
 
 }
