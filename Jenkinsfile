@@ -27,19 +27,14 @@ checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs:
 
     post {
       always {
-            
+
             junit 'target/surefire-reports/*.*xml'
           
       }
     }
   }
 
-  stage('run') {
-    steps {
-        sh 'chmod 777 ./scripts/deliver.sh'
-        sh './scripts/deliver.sh'}
-  }
-
+  
 }
 
 }
