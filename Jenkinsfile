@@ -16,7 +16,7 @@ checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs:
 
          stage('build') {
              steps {
-                sh 'mvn clean install' test
+                sh 'mvn clean install' 
              }   
             }
 
