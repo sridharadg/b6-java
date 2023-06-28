@@ -27,7 +27,6 @@ checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs:
 
     post {
       always {
-            archiveArtifacts artifacts: 'target/**.jar', followSymlinks: false
             junit 'target/surefire-reports/*.*xml'
           
       }
