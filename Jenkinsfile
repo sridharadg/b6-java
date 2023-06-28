@@ -27,6 +27,7 @@ checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs:
 
     post {
       always {
+
             junit 'target/surefire-reports/*.*xml'
           
       }
