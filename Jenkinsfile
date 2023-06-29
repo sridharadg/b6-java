@@ -1,6 +1,8 @@
 pipeline
 {
-    agent any
+    agent {
+        label 'websocket'
+    }
     tools
     {
         maven 'm1'
